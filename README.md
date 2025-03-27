@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website  
 
-## Getting Started
+Welcome to my professional portfolio website! This site showcases my skills, projects, and achievements as a software developer, providing an immersive, user-friendly experience. Built with modern web technologies, it highlights my passion for creating elegant and efficient digital solutions.
 
-First, run the development server:
+## 🚀 Tech Stack  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio was developed using the following technologies:  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js** (15.1.4) – A powerful framework for building fast, SEO-friendly React applications.  
+- **React (19.0.0)** – For creating reusable, dynamic components and an interactive user interface.  
+- **Radix UI** – Provides accessible, unstyled components used for modals, tabs, tooltips, and more.  
+- **Framer Motion** – For fluid animations and engaging transitions.  
+- **Tailwind CSS** – Utility-first CSS framework for responsive design and rapid UI development.  
+- **Lucide React** – A collection of modern SVG icons for enriching UI components.  
+- **Swiper** – Enables sleek carousels and sliders to showcase key content.  
+- **ESLint & Tailwind CSS plugins** – For maintaining clean, optimized code.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌟 Features  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive Design:** A seamless experience across all screen sizes and devices.  
+- **Dynamic Animations:** Smooth, engaging animations and transitions using Framer Motion.  
+- **Interactive UI:** Tabs, tooltips, modals, and select menus powered by Radix UI.  
+- **Modern Styling:** Tailwind CSS ensures clean, scalable, and consistent design patterns.  
+- **Efficient Performance:** Built with Next.js and TurboPack for lightning-fast load speeds and improved SEO.  
 
-## Learn More
+## 🛠 Installation and Setup  
 
-To learn more about Next.js, take a look at the following resources:
+To run this project locally:  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash  
+   git clone <[Repo](https://github.com/Niz46/portfolio)>  
+   ```  
 
-## Deploy on Vercel
+2. Navigate to the project folder:  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash  
+   cd portfolio  
+   ```  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install dependencies:  
+
+   ```bash  
+   npm install  
+   ```  
+
+4. Start the development server:  
+
+   ```bash  
+   npm run dev  
+   ```  
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to explore the site locally.  
+
+## 📂 Project Structure  
+
+The key project folders include:  
+
+- **`/components`** – Reusable React components for modular development.  
+- **`/pages`** – Routing and page content.  
+- **`/public`** – Static assets such as images.  
+- **`/styles`** – Custom Tailwind CSS styles.  
+
+## 🌐 Live Demo  
+
+Check out the live version of the portfolio here: [[Your Portfolio URL](https://portfolio-ruby-five-77.vercel.app/)]  
+
+## 📣 Connect With Me  
+
+I am always looking for opportunities to connect, collaborate, and innovate!  
+
+- **Email:** [favournzeh02@gmail.com]  
+- **LinkedIn:** [www.linkedin.com/in/nzeh-favour]  
+- **GitHub:** [https://github.com/Niz46]  
+
+## 🙌 Contributions  
+
+Contributions, suggestions, or issues? Feel free to open a pull request or issue.  
+
+---
+
+Thank you for visiting my portfolio! This project reflects my dedication to continuous learning and creating impactful digital experiences. If you'd like to work together or learn more about my journey, feel free to get in touch! 🎯
