@@ -64,7 +64,7 @@ The key project folders include:
 
 ## 🌐 Live Demo  
 
-Check out the live version of the portfolio here: [[Your Portfolio URL](https://portfolio-ruby-five-77.vercel.app/)]  
+Check out the live version of the portfolio here: [[Portfolio URL](https://portfolio-ruby-five-77.vercel.app/)]  
 
 ## 📣 Connect With Me  
 
