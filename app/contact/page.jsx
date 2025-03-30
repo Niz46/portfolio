@@ -105,14 +105,12 @@ const Contact = () => {
                   type="email"
                   name="email"
                   placeholder="Enter Email Address"
-                  className="capitalize"
                   required
                 />
                 <Input
                   type="tel"
                   name="phone"
                   placeholder="Enter Phone Number"
-                  className="capitalize"
                   required
                 />
               </div>
