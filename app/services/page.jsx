@@ -10,28 +10,28 @@ const services = [
     title: "Web Development",
     description:
       "I build websites that serve as powerful marketing tools and bring memorable brand experiences.",
-    href: "/",
+    href: "https://github.com/Niz46/bakery.io",
   },
   {
     num: "02",
     title: "Mobile Development",
     description:
       "I create mobile applications that are intuitive, visually appealing, and engaging.",
-    href: "/",
+    href: "https://github.com/Niz46",
   },
   {
     num: "03",
     title: "Python Development",
     description:
       "I develop custom Python applications that are scalable, reliable, and secure.",
-    href: "/",
+    href: "https://github.com/Niz46/options-trades-main",
   },
   {
     num: "04",
     title: "C Development",
     description:
       "I build custom C applications that are fast, efficient, and secure.",
-    href: "/",
+    href: "https://github.com/Niz46",
   },
 ];
 

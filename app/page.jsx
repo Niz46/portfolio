@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -7,6 +9,19 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 const Home = () => {
+  // Handler to download the CV as a DOCX file
+  const handleDownload = () => {
+    // Create a temporary link element
+    const link = document.createElement("a");
+    // Use Google Docs export URL to download as DOCX
+    link.href =
+      "https://docs.google.com/document/d/1JA2risP8ybXZGLfMduksCcDBi1pxV1J4/export?format=docx";
+    // Set the desired name for the downloaded file
+    link.download = "Favour_Nzeh_CV.docx";
+    // Trigger the download by programmatically clicking the link
+    link.click();
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -18,8 +33,8 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Favour Nzeh</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experience and I am proficient
-              in various programming languages and techonologies
+              I excel at crafting elegant digital experiences and am proficient
+              in various programming languages and technologies.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -27,6 +42,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />

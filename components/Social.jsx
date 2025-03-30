@@ -5,19 +5,19 @@ import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa"
 const socials = [
     {
         icons: <FaGithub />,
-        path: "",
+        path: "https://github.com/Niz46",
     },
     {
         icons: <FaLinkedinIn />,
-        path: "",
+        path: "www.linkedin.com/in/nzeh-favour",
     },
     {
         icons: <FaYoutube />,
-        path: "",
+        path: "https://www.youtube.com/@nzehfavournizplu5003",
     },
     {
         icons: <FaTwitter />,
-        path: "",
+        path: "https://x.com/Nizplus46",
     },
 ]
 

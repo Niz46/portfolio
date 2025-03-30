@@ -17,6 +17,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderButton from "@/components/WorkSliderButton";
 
 const projects = [
   {
@@ -26,7 +27,7 @@ const projects = [
     description:
       "A web-based tool that provides translation and summarization capabilities with a clean, responsive interface. This project enables users to translate text between multiple languages, automatically detect the input language, generate summaries for longer texts, and review previous chats—all while offering a sleek dark mode experience.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "",
+    image: "/assets/work/chat.png",
     live: "https://ai-text-processor-three.vercel.app/",
     github: "https://github.com/Niz46/ai-text-processor",
   },
@@ -44,7 +45,7 @@ const projects = [
       { name: "Cloudinary" },
       { name: "Yup" },
     ],
-    image: "",
+    image: "/assets/work/ticket.png",
     live: "https://ticket-generator-rouge.vercel.app",
     github: "https://github.com/Niz46/ticket-generator",
   },
@@ -59,7 +60,7 @@ const projects = [
       { name: "Styled Comp" },
       { name: "RTK Query" },
     ],
-    image: "",
+    image: "/assets/work/platform.png",
     live: "https://test-learnable.vercel.app/",
     github: "https://github.com/Niz46/learnable-e-commerce-test",
   },
@@ -75,7 +76,7 @@ const projects = [
       { name: "Scikit-learn" },
       { name: "Openpyxl" },
     ],
-    image: "",
+    image: "/assets/work/customer.png",
     live: "",
     github: "https://github.com/Niz46/customer_segmentation",
   },
@@ -94,7 +95,10 @@ const Work = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 px-4 xl:px-0"
     >
       <div className="container mx-auto">
@@ -169,15 +173,25 @@ const Work = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
-                      <div></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
-                        <Image src={project.image} fill className="object-cover" alt="" />
+                        <Image
+                          src={project.image}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-all duration-500"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
+              {/* slider button */}
+              <WorkSliderButton
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+              />
             </Swiper>
           </div>
         </div>

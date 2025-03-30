@@ -40,7 +40,7 @@ const about = {
     },
     {
       fieldName: "Nationality",
-      fieldValue: "Nigerian",
+      fieldValue: "Nigeria",
     },
     {
       fieldName: "Email",

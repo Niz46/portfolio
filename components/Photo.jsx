@@ -27,7 +27,7 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            alt="Avatar"
+            alt="Avatar"  
             className="object-contain"
           />
         </motion.div>
