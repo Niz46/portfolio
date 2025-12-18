@@ -24,7 +24,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "I am a passionate Frontend Developer with expertise in React, JavaScript, and Design System. My tech journey began through my elder brother, a backend developer, leading me to explore multiple languages before specializing in frontend development. With an OND in Software Engineering from Aptech, Enugu, I have worked on impactful projects like Customer Segmentation, Bakery Management Systems, and Clinco, focusing on API integrations, component optimization, and state management.I have participated in Learnable 24, ALX, Microsoft Internship, and HNG Internship, continuously refining my skills. As a Genie mentor at Learnable IT Hub, I guide aspiring developers in mastering frontend technologies. Currently, I am enhancing my Design System expertise and deepening my JavaScript proficiency to build scalable, high-performance web applications. Let's connect and create something amazing! 🚀",
+    "I am a passionate Software Engineer with expertise in React, Programming Architecture, and Design System. My tech journey began through my elder brother, a backend developer, leading me to explore multiple languages before specializing in frontend development. With an Higher Education Diploma in Software Engineering from Aptech, Enugu, I have worked on impactful projects like Customer Segmentation, Bakery Management Systems, and Bellevile Dental, focusing on API integrations, component optimization, and state management.I have participated in Learnable 24, ALX, Microsoft Internship, and HNG Internship, continuously refining my skills. As a Genie mentor at Learnable IT Hub, I guide aspiring developers in mastering frontend technologies. Currently, I am enhancing my Design System expertise and deepening my JavaScript proficiency to build scalable, high-performance web applications. Let's connect and create something amazing! 🚀",
   info: [
     {
       fieldName: "Name",
@@ -65,24 +65,24 @@ const experience = {
     "A software developer with two years expertise in ReactJS, Python, and Node.js, and a passion for building user-focused web applications. I’ve worked on projects involving API integration, component optimization, and customer data visualization, using tools like styled-components and Figma. As a Learnable Front-End alum and part-time mentor at Learnable IT Hub, I enjoy empowering others while continually enhancing my technical skills.",
   items: [
     {
-      company: "HNG IT",
-      position: "Front-end Intern Developer",
-      duration: "Jan 2025 - Present",
+      company: "Learnable 25(Genesis Tech Hub)",
+      position: "Front-End Mentor Developer",
+      duration: "Jan 2025 - June 2025",
     },
     {
-      company: "Clinico",
-      position: "Decentralized Developer",
-      duration: "Jan 2024 - Jul 2024",
+      company: "Bellevile Dental",
+      position: "Full Stack Web Developer",
+      duration: "March 2024 - May 2024",
     },
     {
       company: "Genesis Tech Hub",
-      position: "Front-end Developer",
-      duration: "Jan 2022 - Feb 2023",
+      position: "Team Lead Front-End Web Developer",
+      duration: "Sept 2023 - June 2024",
     },
     {
       company: "Aptech IT",
-      position: "Team Lead",
-      duration: "Apr 2021 - Nov 2021",
+      position: "Front-End Intern Developer",
+      duration: "Apr 2022 - May 2022",
     },
   ],
 };
@@ -92,7 +92,7 @@ const education = {
   icon: "/assests/resume/badge.svg",
   title: "My education",
   description:
-    "I hold an Ordinary National Diploma (OND) in Software Engineering from Aptech, Enugu, where I gained a strong foundation in computer science principles, programming, and software development methodologies. My education provided me with hands-on experience in full-stack development, database management, and software architecture.",
+    "I hold an Higher Education Diploma in Software Engineering from Aptech, Enugu, where I gained a strong foundation in computer science principles, programming, and software development methodologies. My education provided me with hands-on experience in full-stack development, database management, and software architecture.",
   items: [
     {
       institute: "Learnable 24 Tech Hub",
@@ -101,7 +101,7 @@ const education = {
     },
     {
       institute: "Aptech Education",
-      degree: "Diploma In Advanced Software Engineer",
+      degree: "Higher Education Diploma In Software Engineer",
       duration: "2022 - 2024",
     },
   ],
@@ -111,7 +111,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "I am a results-driven Frontend Developer with expertise in ReactJS, JavaScript, and Design Systems:. My technical skill set is built on a solid foundation of modern web technologies, component-based architecture, and performance optimization. I specialize in:",
+    "I am a result-driven Software Engineer with expertise in ReactJS, Programming Architecture, and Design Systems:. My technical skill set is built on a solid foundation of modern web technologies, component-based architecture, and performance optimization. I specialize in:",
   skillList: [
     {
       icon: <FaHtml5 />,

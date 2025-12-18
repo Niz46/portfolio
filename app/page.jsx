@@ -11,15 +11,16 @@ import Stats from "@/components/Stats";
 const Home = () => {
   // Handler to download the CV as a DOCX file
   const handleDownload = () => {
-    // Create a temporary link element
+    const fileId = "1NW_0nHGkCXnLI0d9nicmwEw1BBqCaunk";
     const link = document.createElement("a");
-    // Use Google Docs export URL to download as DOCX
-    link.href =
-      "https://docs.google.com/document/d/1JA2risP8ybXZGLfMduksCcDBi1pxV1J4/export?format=docx";
-    // Set the desired name for the downloaded file
-    link.download = "Favour_Nzeh_CV.docx";
-    // Trigger the download by programmatically clicking the link
+
+    // Direct download link for Drive-uploaded files
+    link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+    link.download = "Favour_Nzeh_CV.pdf";
+
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (

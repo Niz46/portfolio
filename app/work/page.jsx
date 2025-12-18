@@ -22,8 +22,26 @@ import WorkSliderButton from "@/components/WorkSliderButton";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Full-Stack",
     title: "project 1",
+    description:
+      "Full-stack Next.js app providing real-time market data, AI summaries, watchlists, alerts, and an admin dashboard. Event-driven architecture (Inngest) performs asynchronous processing for alerts and digests; BetterAuth manages authentication and sessions; Nodemailer handles stock market analysis emails.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Inngest" },
+      { name: "Finnhub" },
+      { name: "MongoDB" },
+      { name: "BetterAuth" },
+    ],
+    image: "/assets/work/dashboard.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "frontend",
+    title: "project 2",
     description:
       "A web-based tool that provides translation and summarization capabilities with a clean, responsive interface. This project enables users to translate text between multiple languages, automatically detect the input language, generate summaries for longer texts, and review previous chats—all while offering a sleek dark mode experience.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
@@ -32,9 +50,9 @@ const projects = [
     github: "https://github.com/Niz46/ai-text-processor",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend",
-    title: "project 1",
+    title: "project 3",
     description:
       "Ticket Generator is a modern web application built with Next.js, React, Redux, and Tailwind CSS that allows users to select and book event tickets through a multi-step process. The app guides users through ticket selection, entering their attendee details, and finally previewing and downloading their ticket.",
     stack: [
@@ -50,9 +68,9 @@ const projects = [
     github: "https://github.com/Niz46/ticket-generator",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
-    title: "project 1",
+    title: "project 4",
     description:
       "This e-commerce platform, developed with React, Redux Toolkit, and React Router, provides smooth navigation, product filtering, a dynamic cart, secure checkout, and real-time notifications. Users can create accounts, manage orders, and enjoy a seamless shopping experience across all devices.",
     stack: [
@@ -65,9 +83,9 @@ const projects = [
     github: "https://github.com/Niz46/learnable-e-commerce-test",
   },
   {
-    num: "04",
+    num: "05",
     category: "backend",
-    title: "project 1",
+    title: "project 5",
     description:
       "The Customer Retail Data Clustering project applies K-Means clustering to segment customers based on purchasing behavior. It preprocesses data, visualizes trends, and uses Python libraries like pandas, matplotlib, seaborn, and scikit-learn to reveal insights that enhance marketing, retention, and sales. Excel files are efficiently handled with openpyxl.",
     stack: [
