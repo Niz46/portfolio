@@ -2,14 +2,22 @@
 
 import {
   FaHtml5,
-  FaCss3,
+  FaAws,
   FaJs,
   FaReact,
   FaNodeJs,
   FaPython,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiDjango } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiPostgresql,
+  SiDjango,
+  SiNextdotjs,
+  SiTypescript,
+  SiMongodb,
+} from "react-icons/si";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -24,7 +32,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "I am a passionate Software Engineer with expertise in React, Programming Architecture, and Design System. My tech journey began through my elder brother, a backend developer, leading me to explore multiple languages before specializing in frontend development. With an Higher Education Diploma in Software Engineering from Aptech, Enugu, I have worked on impactful projects like Customer Segmentation, Bakery Management Systems, and Bellevile Dental, focusing on API integrations, component optimization, and state management.I have participated in Learnable 24, ALX, Microsoft Internship, and HNG Internship, continuously refining my skills. As a Genie mentor at Learnable IT Hub, I guide aspiring developers in mastering frontend technologies. Currently, I am enhancing my Design System expertise and deepening my JavaScript proficiency to build scalable, high-performance web applications. Let's connect and create something amazing! 🚀",
+    "I am a Software Engineer with 3+ years of working experience in building user-centric web applications with Python/Django, Next.js, Node.js, and TypeScript. My tech journey began through my elder brother, a backend developer, leading me to explore multiple languages before specializing in frontend development. With an Higher Education Diploma in Software Engineering from Aptech, Enugu, I have worked on impactful projects like Customer Segmentation, Bakery Management Systems, and Bellevile Dental, focusing on API integrations, component optimization, and state management.I have participated in Learnable 24, ALX, Microsoft Internship, and HNG Internship, continuously refining my skills. As a Genie mentor at Learnable IT Hub, I guide aspiring developers in their tech journeys. I do like playing football(soccer), watching animes. And as a Developer, I am a business-minded individual, always seeking to create innovative business solutions that can be the next million-dollar tech business.",
   info: [
     {
       fieldName: "Name",
@@ -35,19 +43,19 @@ const about = {
       fieldValue: "(+234) 704 787 2574",
     },
     {
-      fieldName: "Expereince",
-      fieldValue: "2 years",
+      fieldName: "Experience",
+      fieldValue: "3+ years",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "Nigeria",
+      fieldName: "Location",
+      fieldValue: "Lagos / Enugu, Nigeria",
     },
     {
       fieldName: "Email",
       fieldValue: "favournzeh02@gmail.com",
     },
     {
-      fieldName: "Freelance & Job Offer",
+      fieldName: "Freelance",
       fieldValue: "Available",
     },
     {
@@ -62,11 +70,21 @@ const experience = {
   icon: "/assests/resume/badge.svg",
   title: "My experience",
   description:
-    "A software developer with two years expertise in ReactJS, Python, and Node.js, and a passion for building user-focused web applications. I’ve worked on projects involving API integration, component optimization, and customer data visualization, using tools like styled-components and Figma. As a Learnable Front-End alum and part-time mentor at Learnable IT Hub, I enjoy empowering others while continually enhancing my technical skills.",
+    "As a Software Engineer, I specialize in architecting scalable React/TypeScript UI components, developing full-stack features with Django and Next.js, also handling cloud infrastructure like AWS and Google Cloud, working with SQL queries tool like PostgreSQL and MYSQL and leading front-end teams. My recent work StockMates: AI-powered real-time stock dashboard (Next.js, Inngest, Finnhub, MongoDB, BetterAuth) platform, delivering structured front-end curriculums to mentor aspiring developers, and optimizing system reliability across diverse tech stacks.",
   items: [
     {
-      company: "Learnable 25(Genesis Tech Hub)",
-      position: "Front-End Mentor Developer",
+      company: "MilesHome Real Estate",
+      position: "Full-Stack Engineer",
+      duration: "Feb 2026 - May 2026",
+    },
+    {
+      company: "(UAACAI) International",
+      position: "Full-Stack Engineer",
+      duration: "Aug 2025 - Nov 2025",
+    },
+    {
+      company: "Learnable 25 (Genesis Tech Hub)",
+      position: "Front-End Mentor",
       duration: "Jan 2025 - June 2025",
     },
     {
@@ -75,14 +93,9 @@ const experience = {
       duration: "March 2024 - May 2024",
     },
     {
-      company: "Genesis Tech Hub",
-      position: "Team Lead Front-End Web Developer",
+      company: "Genesis Tech Hub(Learnable 24)",
+      position: "Intern Team Lead Front-End Web Developer",
       duration: "Sept 2023 - June 2024",
-    },
-    {
-      company: "Aptech IT",
-      position: "Front-End Intern Developer",
-      duration: "Apr 2022 - May 2022",
     },
   ],
 };
@@ -92,17 +105,22 @@ const education = {
   icon: "/assests/resume/badge.svg",
   title: "My education",
   description:
-    "I hold an Higher Education Diploma in Software Engineering from Aptech, Enugu, where I gained a strong foundation in computer science principles, programming, and software development methodologies. My education provided me with hands-on experience in full-stack development, database management, and software architecture.",
+    "I hold a Diploma in Software Engineering alongside specialized certifications in front-end development and Mentorship. My educational background laid a strong foundation in full-stack architecture, programming principles, and production best practices. Also trying to give back to the community by mentoring aspiring developers and sharing knowledge through structured curriculums and hands-on projects.",
   items: [
     {
-      institute: "Learnable 24 Tech Hub",
-      degree: "Certified Front-End Developer",
-      duration: "2024",
+      institute: "Aptech Education",
+      degree: "Diploma in Software Engineering",
+      duration: "Feb 2024",
     },
     {
-      institute: "Aptech Education",
-      degree: "Higher Education Diploma In Software Engineer",
-      duration: "2022 - 2024",
+      institute: "Learnable Internship",
+      degree: "Front-end Development Certification",
+      duration: "2023 - 2024",
+    },
+    {
+      institute: "Learnable 25 (Genesis Tech Hub)",
+      degree: "Front-end Development Mentorship Certification",
+      duration: "2024 - 2025",
     },
   ],
 };
@@ -111,39 +129,55 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "I am a result-driven Software Engineer with expertise in ReactJS, Programming Architecture, and Design Systems:. My technical skill set is built on a solid foundation of modern web technologies, component-based architecture, and performance optimization. I specialize in:",
+    "My technical skill set is built on a solid foundation of modern web technologies, component-based architecture, and performance optimization. I specialize in building robust applications using:",
   skillList: [
     {
-      icon: <FaHtml5 />,
-      name: "HTML 5",
+      icon: <SiNextdotjs />,
+      name: "Next.js",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "JS",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "NODEJS",
-    },
-    {
-      icon: <FaPython />,
-      name: "PYTHON",
+      icon: <SiTypescript />,
+      name: "TypeScript",
     },
     {
       icon: <FaReact />,
-      name: "REACT",
+      name: "React",
     },
     {
-      icon: <SiTailwindcss />,
-      name: "TAILWINDCSS",
+      icon: <FaNodeJs />,
+      name: "Node.js",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
     },
     {
       icon: <SiDjango />,
-      name: "DJANGO",
+      name: "Django",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+    },
+    {
+      icon: <FaHtml5 />,
+      name: "HTML5",
+    },
+    {
+      icon: <FaJs />,
+      name: "JavaScript",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
     },
   ],
 };

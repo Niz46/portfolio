@@ -23,7 +23,7 @@ const projects = [
   {
     num: "01",
     category: "Full-Stack",
-    title: "project 1",
+    title: "StockMates - Real-time Market Data & AI Summaries",
     description:
       "Full-stack Next.js app providing real-time market data, AI summaries, watchlists, alerts, and an admin dashboard. Event-driven architecture (Inngest) performs asynchronous processing for alerts and digests; BetterAuth manages authentication and sessions; Nodemailer handles stock market analysis emails.",
     stack: [
@@ -36,23 +36,61 @@ const projects = [
     ],
     image: "/assets/work/dashboard.png",
     live: "",
-    github: "",
+    github: "https://github.com/Niz46/stocks-trade",
   },
   {
     num: "02",
-    category: "frontend",
-    title: "project 2",
+    category: "Full-Stack",
+    title: "(UAACAI) International NGO",
     description:
-      "A web-based tool that provides translation and summarization capabilities with a clean, responsive interface. This project enables users to translate text between multiple languages, automatically detect the input language, generate summaries for longer texts, and review previous chats—all while offering a sleek dark mode experience.",
+      "MERN stack web application. The website functions as the academic and public relations face of an NGO dedicated to eradicating corruption and human rights abuses in Africa. It achieves this by hosting research journals, organizing international conferences, and publicly honoring leaders who demonstrate integrity.",
+    stack: [
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "PostgreSQL (Prisma)" },
+      { name: "Resend Email" },
+      { name: "Cloudinary" },
+      { name: "MongoDB" },
+      { name: "OpenAI" },
+    ],
+    image: "/assets/work/uaacai.png",
+    live: "https://uaacaiinternational.org/",
+    github:
+      "https://github.com/Niz46/frontend & https://github.com/Niz46/backend",
+  },
+  {
+    num: "03",
+    category: "Full-Stack",
+    title: "MilesHome - Real Estate Platform",
+    description:
+      "MERN stack web application is an end-to-end digital marketplace designed to make finding, vetting, and booking rental housing transparent, structured, and friction-free for modern tenants.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Node.js" },
+      { name: "PostgreSQL (Prisma ORM)" },
+      { name: "ShadCN UI" },
+      { name: "AWS S3, Cognito" },
+      { name: "Mailgun" },
+    ],
+    image: "/assets/work/mileshome.png",
+    live: "https://mileshomerealestate.com/",
+    github: "https://github.com/Niz46/client & https://github.com/Niz46/server",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "AI Text Processor",
+    description:
+      "A web-based tool that provides translation and summarization capabilities with a clean, responsive interface. This project enables users to translate text between multiple languages, automatically detect the input language, generate summaries for longer texts, and review previous chats.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/chat.png",
     live: "https://ai-text-processor-three.vercel.app/",
     github: "https://github.com/Niz46/ai-text-processor",
   },
   {
-    num: "03",
+    num: "05",
     category: "frontend",
-    title: "project 3",
+    title: "Ticket Generator",
     description:
       "Ticket Generator is a modern web application built with Next.js, React, Redux, and Tailwind CSS that allows users to select and book event tickets through a multi-step process. The app guides users through ticket selection, entering their attendee details, and finally previewing and downloading their ticket.",
     stack: [
@@ -68,11 +106,11 @@ const projects = [
     github: "https://github.com/Niz46/ticket-generator",
   },
   {
-    num: "04",
+    num: "06",
     category: "frontend",
-    title: "project 4",
+    title: "E-Commerce Platform",
     description:
-      "This e-commerce platform, developed with React, Redux Toolkit, and React Router, provides smooth navigation, product filtering, a dynamic cart, secure checkout, and real-time notifications. Users can create accounts, manage orders, and enjoy a seamless shopping experience across all devices.",
+      "This e-commerce platform, developed with React, Redux Toolkit, and React Router, provides smooth navigation, product filtering, a dynamic cart, secure checkout, and real-time notifications. Users can create accounts, manage orders, and enjoy a seamless shopping experience.",
     stack: [
       { name: "React Vite" },
       { name: "Styled Comp" },
@@ -83,11 +121,11 @@ const projects = [
     github: "https://github.com/Niz46/learnable-e-commerce-test",
   },
   {
-    num: "05",
+    num: "07",
     category: "backend",
-    title: "project 5",
+    title: "Data Clustering",
     description:
-      "The Customer Retail Data Clustering project applies K-Means clustering to segment customers based on purchasing behavior. It preprocesses data, visualizes trends, and uses Python libraries like pandas, matplotlib, seaborn, and scikit-learn to reveal insights that enhance marketing, retention, and sales. Excel files are efficiently handled with openpyxl.",
+      "The Customer Retail Data Clustering project applies K-Means clustering to segment customers based on purchasing behavior. It preprocesses data, visualizes trends, and uses Python libraries like pandas, matplotlib, seaborn, and scikit-learn to reveal insights that enhance marketing.",
     stack: [
       { name: "Python" },
       { name: "Pandas" },
@@ -121,23 +159,26 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[20px] h-[50%]">
+          <div className="w-full xl:w-[50%] xl:min-h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+            <div className="flex flex-col gap-[20px] flex-grow">
               {/* outline number */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
+              <div className="text-4xl font-bold text-accent/30 leading-none">
+                {project.title}
+              </div>
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[30px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={item.name} className="text-xl text-accent">
                       {item.name}
                       {/* remove the last comma */}
                       {index !== project.stack.length - 1 && ","}
@@ -149,33 +190,51 @@ const Work = () => {
               <div className="border border-white/20"></div>
               {/* buttons */}
               <div className="flex items-center gap-4">
-                {/* project link button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="capitalize">live link</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {/* Conditionally render live link button */}
+                {project.live && (
+                  <Link
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="capitalize">Live Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
 
-                {/* project link button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="capitalize">github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {/* Handle single or multiple GitHub links parsed by '&' */}
+                {project.github &&
+                  project.github.split("&").map((repoUrl, index) => (
+                    <Link
+                      key={index}
+                      href={repoUrl.trim()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                            <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="capitalize">
+                              GitHub Repo{" "}
+                              {project.github.includes("&") &&
+                                `(${index === 0 ? "Client" : "Server"})`}
+                            </p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  ))}
               </div>
             </div>
           </div>
@@ -188,8 +247,8 @@ const Work = () => {
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <SwiperSlide key={project.num} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-lg overflow-hidden">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
@@ -197,8 +256,9 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className="object-cover group-hover:scale-105 transition-all duration-500"
-                          alt=""
+                          alt={project.title}
                         />
                       </div>
                     </div>
